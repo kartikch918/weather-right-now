@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 class Weather extends React.Component{
     constructor(props) {
@@ -9,7 +10,7 @@ class Weather extends React.Component{
     componentDidMount(){
 
         const proxy = `https://cors-anywhere.herokuapp.com/`
-        let api = `${proxy}/https://api.Weathersky.net/forecast/b9ec8785be758ca20484c4940d52e161/30.7334,76.7796`
+        let api = `${proxy}https://api.darksky.net/forecast/dc999d9f7904ed6d720f8c2dc1f9a135/30.7333,76.7794`
         
 
         fetch(api)
@@ -25,10 +26,10 @@ class Weather extends React.Component{
         return(
             <div>
                 <h1>
-                    Hello world
+                    Hey, the forecast today shows the following:
                 </h1>
                 <h1>
-                    Welcome Here
+                    
                 </h1>
             </div>
         )
